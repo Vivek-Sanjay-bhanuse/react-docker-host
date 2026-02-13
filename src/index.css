@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+/* Smooth transitions globally */
+* {
+  @apply transition-all duration-300;
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-[#F8FAFC] text-[#1E3A8A] ;
+}
+
+:root {
+  --primary: #1E3A8A;
+  --secondary: #0EA5E9;
+  --accent: #FF5733;
+  --light-bg: #F8FAFC;
+  --textgray: #64748B;
+}
+
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-accent { color: var(--accent); }
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-accent { background-color: var(--accent); }
+.border-accent { border-color: var(--accent); }
